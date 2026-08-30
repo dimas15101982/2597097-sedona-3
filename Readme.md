@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий Долгов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2597097).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra)
-* Сайт: [Мой проект Седона](https://github.com/dimas15101982/2597097-sedona-3)
+* Сайт: [Мой проект Седона](https://dimas15101982.github.io/2597097-sedona-3/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

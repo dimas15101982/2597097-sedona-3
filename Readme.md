@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Долгов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2597097).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra)
 
 ---
 

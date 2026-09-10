@@ -4,62 +4,71 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - городок в Аризоне</title>
-
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="main-header">
-      <a href="index.html"><img src="images/logo.svg"  width="140" height="70" alt="Логотип Седона"></a>
+      <a href="index.html"><img src="images/logo.svg" width="140" height="70" alt="Логотип Седона"></a>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-search" href="#">
+              <span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-favourites" href="#">
               <span class="visually-hidden">Избранное</span></a>
             <span class="favourites">12</span>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="#">Хочу сюда!</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-btn" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        <img src="images/welcome.svg" width="458" height="352"
+          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
 
       <section class="reasons">
         <h2 class="reasons-title">Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
         <p class="reason-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="reasons-list">
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-first">
             <h3 class="reasons-item-title">Настоящий городок</h3>
             <p class="reasons-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="reasons-item-img" src="images/photo-1.jpg" width="800" height="385" alt="Фото города">
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-second">
             <h3 class="reasons-item-title">Небольшая площадь</h3>
             <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-third">
             <h3 class="reasons-item-title">Красивая дорога</h3>
             <p class="reasons-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons-item">
+          <li class="reasons-item reasons-item-fourth">
             <h3 class="reasons-item-title">Мало туристов</h3>
             <p class="reasons-item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="reasons-item">
-            <img class="reasons-item-img" src="images/photo-2.jpg"  width="800"  height="385" alt="Фото каньона">
+          <li class="reasons-item reasons-item-fifth">
+            <img class="reasons-item-img" src="images/photo-2.jpg" width="800" height="385" alt="Фото каньона">
             <h3 class="reasons-item-title">Там есть мост дьявола</h3>
             <p class="reasons-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -70,15 +79,15 @@
         <h2 class="service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="service-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="service-list">
-          <li class="service-item">
+          <li class="service-item service-item-first">
             <h3 class="service-item-title">Жилье</h3>
             <p class="service-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="service-item">
+          <li class="service-item service-item-second">
             <h3 class="service-item-title">Еда</h3>
             <p class="service-item-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="service-item">
+          <li class="service-item service-item-third">
             <h3 class="service-item-title">Сувениры</h3>
             <p class="service-item-text">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -89,7 +98,7 @@
         <h2 class="interested-title">Заинтересовались?</h2>
         <p class="interested-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+        <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="subscribe">
@@ -105,20 +114,22 @@
       <footer class="main-footer">
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social-item">
-            <a href="https://t.me/htmlacademy">Телеграмм</a>
+            <a href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграмм</span></a>
           </li>
           <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            <a href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-
-        <a href="tel:+78128121212">+7(812)812-12-12</a>
-
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy</a>
-
+        <a class="phone" href="tel:+78128121212">+7(812)812-12-12</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
       </footer>
     </main>
   </body>

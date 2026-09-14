@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -10,30 +10,70 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
-  width: 1200px;
+  margin: 0;
+}
+
+.main-container {
+  flex-grow: 1;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* .visually-hidden {
+/* скрытие невидимого контента(временно отключено) */
+.visually-hidden {
   display: none;
-} */
+}
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1060px;
+  height: 64px;
+  margin: 0 auto;
+}
 
+.navigation {
+  min-width: 450px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.navigation-user {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
 
 .navigation-link {
   font-style: 20px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
   text-decoration: none;
   list-style-type: none;
@@ -44,20 +84,35 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  width: 160px;
-  height: 36px;
+  font-weight: 700;
+  min-width: 160px;
+  min-height: 36px;
   padding: 8px 24px;
   background-color: #756157;
   color: #ffffff;
   border-radius: 4px;
 }
 
+.logo-wrapper {
+  position: relative;
+  /* margin-left: 70px; */
+  align-self: flex-start;
+  max-width: 140px;
+}
+
+.right-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+  width: 268px;
+}
+
 /* Главная */
 .hero {
-  height: 485px;
-  background-image: url(../images/divider.svg),
-    url(../images/index-background.jpg);
+  background-image: url("../images/divider.svg"),
+    url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   background-size: 100% auto, cover;
@@ -70,6 +125,50 @@ body {
   padding: 51px 371px 80px 371px;
 }
 
+.reasons-section-description {
+  text-align: center;
+  padding: 69px 270px;
+  margin-bottom: 21px;
+}
+
+.service-section-description {
+  text-align: center;
+  padding: 64px 270px;
+}
+
+.interested-section-description {
+  text-align: center;
+  padding: 96px 304px;
+}
+
+.subscribe-section-description {
+  text-align: center;
+  padding: 96px 258px 104px;
+}
+
+.reasons-list,
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reasons-item-title-wrapper {
+  max-width: 400px;
+  padding: 100px 85px;
+}
+
+.reasons-item,
+.service-item {
+  text-align: center;
+  flex: 1;
+}
+
+.service-item {
+  padding: 81px 85px;
+}
 
 .reasons-title,
 .service-title,
@@ -79,7 +178,7 @@ body {
 .subscribe-catalog-title {
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -88,6 +187,7 @@ body {
 .interested-text,
 .subscribe-text,
 .subscribe-catalog-text {
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
 }
@@ -96,7 +196,7 @@ body {
 .service-item-title {
   font-size: 24px;
   line-height: 28px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -104,35 +204,35 @@ body {
   color: #333333;
 }
 
-.reasons-item-first,
-.reasons-item-fifth {
+.reasons-item:first-child,
+.reasons-item:last-child {
+  display: flex;
   background-color: #82B3D3;
-}
-
-.reasons-item-second,
-.reasons-item-fourth {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.reasons-item-third {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.reasons-item-first,
-.reasons-item-fifth {
   color: #ffffff;
 }
 
-.service-item-first,
-.service-item-third {
+.reasons-item:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reasons-item:nth-child(3n) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.service-item-bg {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.interested-text {
+  margin-bottom: 54px;
 }
 
 .search-button,
 .subscribe-button {
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -149,14 +249,31 @@ body {
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  margin: 0;
+  border: none;
 }
 
 .subscribe {
   height: 414px;
-  background-image: url(../images/subscriber-background.jpg);
+  background-image: url("../images/subscriber-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: rgba(131, 179, 211, 1);
+  background-color: #83b3d3;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 230px 14px 20px;
+  border-radius: 4px 0 0 4px;
+  margin: 0;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .subscribe-title,
@@ -164,9 +281,20 @@ body {
   color: #ffffff;
 }
 
-.subscribe-input {
-  font-size: 18px;
-  line-height: 24px;
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 70px;
 }
 
 .phone {
@@ -176,20 +304,33 @@ body {
   text-decoration: none;
 }
 
+.logo-htmlacademy {
+  margin-right: 70px;
+}
 
 /* Каталог */
 .catalog-filter {
-  background-image: url(../images/catalog-background.jpg);
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(131, 179, 211, 1);
+  background-color: #83b3d3;
   color: #ffffff;
+  padding: 35px 70px 70px;
+}
+
+.catalog-filter-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .catalog-filter-title {
   font-size: 60px;
   line-height: 78px;
-  font-weight: bold;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .catalog-filter-nav-item-hotels {
@@ -197,23 +338,82 @@ body {
   line-height: 21px;
 }
 
+.hotels-filter {
+  display: flex;
+}
+
+.infrastructure {
+  border: none;
+  padding: 0;
+  margin: 0 70px 0 0;
+  min-width: 150px;
+}
+
+.infrastructure-list {
+  padding: 0;
+  margin: 0;
+}
+
+.type-of-housing {
+  border: none;
+  padding: 0;
+  margin: 0 140px 0 0;
+  min-width: 150px;
+}
+
+.type-of-housing-list {
+  padding: 0;
+  margin: 0;
+}
+
+.cost {
+  border: none;
+  margin: 0;
+  padding: 0;
+  max-width: 288px;
+  margin-right: 50px;
+}
+
 .infrastructure-title,
 .type-of-housing-title,
 .cost-title {
   font-size: 20px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  margin-bottom: 32px;
+  padding: 0;
 }
 
 .infrastructure-item,
 .type-of-housing-item {
   line-height: 23px;
+  list-style-type: none;
+  margin-right: auto;
+}
+
+.card-conteiner {
+  width: 286px;
+}
+
+.card-content {
+  display: flex;
 }
 
 .card-content input {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  padding: 12px 0 12px 20px;
+  width: 141px;
+}
+
+.card-content input:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.card-content input:last-child {
+  border-radius: 0 4px 4px 0;
 }
 
 .hotels-filter-btn,
@@ -222,34 +422,106 @@ body {
 .catalog-item-btn {
   font-size: 16px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .hotels-filter-btn {
+  font-family: inherit;
   padding: 8px 50px;
   background-color: #82B3D3;
   border-radius: 4px;
   cursor: pointer;
+  width: 191px;
+  height: 36px;
+  margin-top: 56px;
+  margin-bottom: 32px;
 }
 
 .hotels-filter-btn-reset {
+  font-family: inherit;
+  padding: 8px 50px;
   border: none;
   background: none;
   cursor: pointer;
+  width: 191px;
+  height: 36px;
+  margin: 0;
+}
+
+.search-result {
+  padding: 0 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-result-view {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.search-result-hotels {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 .search-result select {
-  width: 292px;
-  height: 49px;
+  min-width: 292px;
+  max-height: 49px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 14px 13px 14px 20px;
+  padding: 12px 13px 12px 20px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
+}
+
+.catalog {
+  width: 1200px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0 70px;
+}
+
+.catalog-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 18px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.catalog-item-type-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-item img {
+  max-width: 300px;
 }
 
 .catalog-item-link {
@@ -259,6 +531,7 @@ body {
 }
 
 .catalog-item-btn {
+  font-family: inherit;
   padding: 8px 20px;
   background-color: #82B3D3;
   border: none;
@@ -269,7 +542,7 @@ body {
 .catalog-item-title {
   font-size: 24px;
   line-height: 28px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -293,25 +566,41 @@ body {
   padding: 9px 22px 8px 23px;
 }
 
+.pagination {
+  width: 1200px;
+  padding: 0;
+  padding-left: 70px;
+}
 
 .pagination-item {
   display: inline-block;
   font-size: 20px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination span {
+  width: 60px;
+  height: 60px;
+  padding: 15px 20px;
 }
 
 .pagination a {
   display: inline-block;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   border-radius: 4px;
-  margin: 0 4px;
   text-decoration: none;
   color: #ffffff;
   background-color: #82B3D3;
   text-align: center;
   line-height: 60px;
+  padding: 0 3px;
 }
 
 .pagination-item-active a {

@@ -10,11 +10,9 @@
   <body>
     <div class="main-wrapper">
       <header class="main-header">
-        <div class="logo-wrapper">
-          <a href="index.html">
-            <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
-          </a>
-        </div>
+        <a class="logo" href="index.html">
+          <img  src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -144,18 +142,14 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="#"><img src="images/hotel-1.jpg" width="300" height="212" alt="Отель Amara Resort & Spa"></a>
-              <a href="#">
+              <a class="catalog-item-title-link" href="#">
                 <h3 class="catalog-item-title">Amara Resort & Spa</h3>
               </a>
-              <div class="catalog-item-type-wrapper">
+              <div class="catalog-item-description">
                 <p class="catalog-item-type">Гостиница</p>
                 <p class="catalog-item-price">От 4000 ₽</p>
-              </div>
-              <div class="catalog-item-link-wrapper">
                 <a class="catalog-item-link" href="#">Подробнее</a>
                 <button class="catalog-item-btn" type="button">В избранное</button>
-              </div>
-              <div class="catalog-item-rating-wrapper">
                 <p class="catalog-item-rating-stars"><span class="visually-hidden">4 звезды</span></p>
                 <p class="catalog-item-rating">Рейтинг: 8,5</p>
               </div>
@@ -163,18 +157,14 @@
 
             <li class="catalog-item">
               <a href="#"><img src="images/hotel-2.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo"></a>
-              <a href="#">
+              <a class="catalog-item-title-link" href="#">
                 <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
               </a>
-              <div class="catalog-item-type-wrapper">
+              <div class="catalog-item-description">
                 <p class="catalog-item-type">Гостиница</p>
                 <p class="catalog-item-price">От 5000 ₽</p>
-              </div>
-              <div class="catalog-item-link-wrapper">
                 <a class="catalog-item-link" href="#">Подробнее</a>
                 <button class="catalog-item-btn" type="button">В избранное</button>
-              </div>
-              <div class="catalog-item-rating-wrapper">
                 <p class="catalog-item-rating-stars"><span class="visually-hidden">4 звезды</span></p>
                 <p class="catalog-item-rating">Рейтинг: 9,2</p>
               </div>
@@ -182,18 +172,14 @@
 
             <li class="catalog-item">
               <a href="#"><img src="images/hotel-3.jpg" width="300" height="212" alt="Отель Desert Quail Inn"></a>
-              <a href="#">
+              <a class="catalog-item-title-link" href="#">
                 <h3 class="catalog-item-title">Desert Quail Inn</h3>
               </a>
-              <div class="catalog-item-type-wrapper">
+              <div class="catalog-item-description">
                 <p class="catalog-item-type">Гостиница</p>
                 <p class="catalog-item-price">От 2500 ₽</p>
-              </div>
-              <div class="catalog-item-link-wrapper">
                 <a class="catalog-item-link" href="#">Подробнее</a>
                 <button class="catalog-item-btn" type="button">В избранное</button>
-              </div>
-              <div class="catalog-item-rating-wrapper">
                 <p class="catalog-item-rating-stars"><span class="visually-hidden">3 звезды</span></p>
                 <p class="catalog-item-rating">Рейтинг: 4,9</p>
               </div>
@@ -201,18 +187,14 @@
 
             <li class="catalog-item">
               <a href="#"><img src="images/hotel-4.jpg" width="300" height="212" alt="Отель GreenTree Inn"></a>
-              <a href="#">
+              <a class="catalog-item-title-link" href="#">
                 <h3 class="catalog-item-title">GreenTree Inn</h3>
               </a>
-              <div class="catalog-item-type-wrapper">
+              <div class="catalog-item-description">
                 <p class="catalog-item-type">Гостиница</p>
                 <p class="catalog-item-price">От 1500 ₽</p>
-              </div>
-              <div class="catalog-item-link-wrapper">
                 <a class="catalog-item-link" href="#">Подробнее</a>
                 <button class="catalog-item-btn" type="button">В избранное</button>
-              </div>
-              <div class="catalog-item-rating-wrapper">
                 <p class="catalog-item-rating-stars"><span class="visually-hidden">2 звезды</span></p>
                 <p class="catalog-item-rating">Рейтинг: 5,0</p>
               </div>
@@ -241,12 +223,12 @@
         </section>
 
         <section class="subscribe-catalog">
-            <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-              <button class="subscribe-button" type="submit">Подписаться</button>
-            </form>
+          <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <button class="subscribe-button" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <footer class="main-footer">

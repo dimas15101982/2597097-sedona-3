@@ -28,17 +28,17 @@
           </ul>
         </nav>
         <ul class="navigation-user">
-          <li class="navigation-user-link navigation-user-link-search">
+          <li class="navigation-user-link">
             <a class="navigation-user-search" href="#">
               <span class="visually-hidden">Поиск</span></a>
           </li>
-          <li class="navigation-user-link navigation-user-link-favourites">
+          <li class="navigation-user-link">
             <a class="navigation-user-favourites" href="#">
               <span class="visually-hidden">Избранное</span></a>
             <span class="favourites">12</span>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-btn" href="#" >Хочу сюда!</a>
+            <a class="navigation-user-btn" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -64,26 +64,26 @@
             </li>
             <li class="reasons-item">
               <div class="reasons-item-title-wrapper">
-                <h3 class="reasons-item-title">Небольшая<br>площадь</h3>
+                <h3 class="reasons-item-title reasons-item-title-nopicture">Небольшая<br>площадь</h3>
                 <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="reasons-item-lightblue">
               <div class="reasons-item-title-wrapper">
-                <h3 class="reasons-item-title">Красивая<br>дорога</h3>
+                <h3 class="reasons-item-title reasons-item-title-nopicture">Красивая<br>дорога</h3>
                 <p class="reasons-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="reasons-item">
               <div class="reasons-item-title-wrapper">
-                <h3 class="reasons-item-title">Мало<br>туристов</h3>
+                <h3 class="reasons-item-title reasons-item-title-nopicture">Мало<br>туристов</h3>
                 <p class="reasons-item-text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="reasons-item-blue-another">
               <img class="reasons-item-img" src="images/photo-2.jpg" width="800" height="385" alt="Фото каньона">
               <div class="reasons-item-title-wrapper">
-                <h3 class="reasons-item-title">Там есть мост дьявола</h3>
+                <h3 class="reasons-item-title">Там есть<br> мост дьявола</h3>
                 <p class="reasons-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
@@ -114,14 +114,13 @@
         <section class="interested">
           <h2 class="interested-title">Заинтересовались?</h2>
           <p class="interested-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения
-            гостиниц в
-            Седоне</p>
+            гостиниц в Седоне</p>
           <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
 
         <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="email" class="visually-hidden">Введите Ваш e-mail</label>
             <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
@@ -132,7 +131,7 @@
       <footer class="main-footer">
         <ul class="social-list">
           <li class="social-item">
-            <a  href="https://vk.com/htmlacademy">
+            <a href="https://vk.com/htmlacademy">
               <svg class="icon-vk" width="24" height="14" viewBox="0 0 24 14" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -159,10 +158,11 @@
               <span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
-        <a class="phone" href="tel:+78128121212">+7(812)812-12-12</a>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="icon-htmlacademy" width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 12.9V15.5H2.5V12.9H0Z"  />
+          <svg class="icon-htmlacademy" width="115" height="33" viewBox="0 0 115 33" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 12.9V15.5H2.5V12.9H0Z" />
             <path
               d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
             <path
@@ -189,6 +189,148 @@
           <span class="visually-hidden">Логотип HTML Academy</span>
         </a>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-filter" action="http://echo.htmlacademy.ru" method="post">
+              <div class="date-in-wrapper">
+                <label class="date-in" for="date-input">Дата Заезда:</label>
+                <input class="date-input date-input-in" type="text" name="date-in" id="date-input" value="27 апреля 2020"
+                  placeholder="Выберите дату" aria-label="Дата заезда">
+                <button class="calendar" type="button" aria-label="Открыть календарь">
+                  <svg class="calendar-icon" width="16" height="15" viewBox="0 0 16 15" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" />
+                    <path
+                      d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" />
+                    <path
+                      d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z" />
+                    <path
+                      d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z" />
+                    <path
+                      d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z" "/>
+                    <path d=" M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" />
+                    <path
+                      d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" />
+                    <path
+                      d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z" />
+                    <path
+                      d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z" />
+                    <path
+                      d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z"
+                      fill="black" />
+                    <path
+                      d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" />
+                  </svg>
+                </button>
+                <p class="date-alert date-in-error date-alert--visible">Мы не может отправить вас в прошлое.</p>
+              </div>
+              <div class="date-out-wrapper">
+                <label class="date-out" for="date-out">Дата Выезда:</label>
+                <input class="date-input date-input-out" type="text" name="date-out" id="date-out" value="1 сентября 2023"
+                  placeholder="Выберите дату" aria-label="Дата выезда">
+                <button class="calendar" type="button" aria-label="Открыть календарь">
+                  <svg class="calendar-icon" width="16" height="15" viewBox="0 0 16 15" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" />
+                    <path
+                      d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" />
+                    <path
+                      d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z" />
+                    <path
+                      d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z" />
+                    <path
+                      d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z" "/>
+                    <path d=" M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" />
+                    <path
+                      d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" />
+                    <path
+                      d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z" />
+                    <path
+                      d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z" />
+                    <path
+                      d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z"
+                      fill="black" />
+                    <path
+                      d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" />
+                  </svg>
+                </button>
+                <p class="date-alert date-out-error date-alert--visible">На эти даты есть свободные номера. Пока есть.
+                </p>
+              </div>
+              <div class="number-of-people">
+                <div class="adults-wrapper">
+                  <label class="adults" for="adults-quantity">Взрослые:</label>
+                  <button class="less" type="button">
+                    <div class="less-icon-wrapper">
+                      <svg class="less-icon" width="14" height="2" viewBox="0 0 14 2" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 2L14 2V0L0 0Z" />
+                      </svg>
+                    </div>
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="quantity" type="number" name="adults" id="adults-quantity" value="2">
+                  <button class="more" type="button">
+                    <div class="more-icon-wrapper">
+                      <svg class="more-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                    </div>
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+                <div class="childs-wrapper">
+                  <span class="childs">
+                    <label class="childs" for="childs-quantity">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
+                        которые будут с вами, возраст которых от 6 до
+                        18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <button class="less" type="button">
+                    <div class="less-icon-wrapper">
+                      <svg class="less-icon" width="14" height="2" viewBox="0 0 14 2" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 2L14 2V0L0 0Z" />
+                      </svg>
+                    </div>
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="quantity" type="number" name="childs" id="childs-quantity" value="2">
+                  <button class="more" type="button">
+                    <div class="more-icon-wrapper">
+                      <svg class="more-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                    </div>
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
+              <button class="modal-search-button" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
